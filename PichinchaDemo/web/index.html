@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+  <title>OSC extension</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">Resumen General</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Rentabilidad</button>
+  </div>
+  <div id="London" class="tabcontent">
+    <h3>Información Basica</h3>
+    <br>
+    <img src="img/oportunidades.png" alt="Smiley face" height="350" width="450">
+
+
+    <div class="frm">
+      <form class="form-inline">
+        <label for="name" class="col-lg-4">Cargo:</label>
+        <div class="col-lg-8">
+          <label class="col-lg-8" style="    font-weight: normal !important;">Vicepresidente Comercial</label>
+        </div>
+    </div>
+    <div class="frm">
+      <form class="form-inline">
+        <label for="name" class="col-lg-4">Cuenta:</label>
+        <div class="col-lg-8">
+          <label class="col-lg-8" style="    font-weight: normal !important;">Corporación El Rosado</label>
+        </div>
+    </div>
+    <div class="frm">
+      <form class="form-inline">
+        <label for="name" class="col-lg-4">Telefono Principal:</label>
+        <div class="col-lg-8">
+          <label class="col-lg-8" style="    font-weight: normal !important;">3124567456</label>
+        </div>
+    </div>
+    <div class="frm">
+      <form class="form-inline">
+        <label for="name" class="col-lg-4">E-mail:</label>
+        <div class="col-lg-8">
+          <label class="col-lg-8"  style="   color:blue;  text-decoration: underline; font-weight: normal !important;">vpcomercial@elrosado.com</label>
+        </div>
+    </div>
+    <div class="frm">
+      <form class="form-inline">
+        <label for="name" class="col-lg-4">Dirección:</label>
+        <div class="col-lg-8">
+          <label class="col-lg-8" style="    font-weight: normal !important;">Av 9 de Octubre 727 E/Boyacá y García Avilés</label>
+        </div>
+    </div>
+    <div class="frm">
+      <form class="form-inline">
+        <label for="name" class="col-lg-4">Relación:</label>
+        <div class="col-lg-8">
+          <label class="col-lg-8" style="    font-weight: normal !important;">Buena</label>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="Divider">
+    </div>
+    <h3>Resumen de productos</h3>
+    <h4>Tarjeta de credito</h4>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Tipo</th>
+            <th>Número</th>
+            <th>Estado</th>
+            <th>Fecha último pago</th>
+            <th>Valor a Pagar</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="danger">
+            <td> <img src="http://investadvocate.com.ng/wp-content/uploads/2017/12/MasterCard.jpeg" alt="" border=3 height=40 width=<40></40>
+              </img>
+            </td>
+            <td>XXXXXX-XXXXX-X-8578</td>
+            <td>Mora 2 días</td>
+            <td>2018-ene-14</td>
+            <td>100 USD</td>
+            <td><a href="">Ver detalles ...</a></td>
+          </tr>
+          <tr class="success">
+            <td> <img src="http://investadvocate.com.ng/wp-content/uploads/2017/12/MasterCard.jpeg" alt="" border=3 height=40 width=<40></40>
+              </img>
+            </td>
+            <td>XXXX-XXXXX-XXXX-2458 </td>
+            <td>Al día</td>
+            <td>2018-ene-03</td>
+            <td>250 USD</td>
+            <td><a href="">Ver detalles ...</a></td>
+          </tr>
+          <tr class="success">
+            <td> <img src="http://millentours.com/templates/images/img_v.png" alt="" border=3 height=40 width=<40></40>
+              </img>
+            </td>
+            <td>XXXX-XXXXX-XXXX-1594 </td>
+            <td>Al día</td>
+            <td>2018-dic-23</td>
+            <td>650 USD</td>
+            <td><a href="">Ver detalles ...</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h4>Creditos</h4>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Tipo</th>
+            <th>Número</th>
+            <th>Estado</th>
+            <th>Fecha último pago</th>
+            <th>Valor a Pagar</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="success">
+            <td>Crédito Hipotecario</td>
+            <td>5896647 </td>
+            <td>Al día</td>
+            <td>2018-ene-01</td>
+            <td>540 USD</td>
+            <td><a href="">Ver detalles ...</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id="Paris" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p>
+  </div>,
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts/index.js"></script>
+
+</body>
+
+</html>
