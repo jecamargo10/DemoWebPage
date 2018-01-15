@@ -14,7 +14,23 @@ and open the template in the editor.
   <link href="css/styles.css" rel="stylesheet">
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
+  <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/patterns.js"></script>
+  <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,59 +39,30 @@ and open the template in the editor.
     <button class="tablinks" onclick="openCity(event, 'Paris')">Rentabilidad</button>
   </div>
   <div id="London" class="tabcontent">
-    <h3>Información Basica</h3>
-    <div class="frm">
-      <form class="form-inline">
-        <br>
-
-        <label for="name" class="col-lg-4">Cargo:</label>
-        
-        <div class="col-lg-8">
-          <label class="col-lg-8" style="    font-weight: normal !important;">Vicepresidente Comercial</label>
-        </div>
+    <h2>Información Basica</h2>
+    <br>
+    <div class="row">
+      <label for="name" class="col-4 offset-2">Cargo:</label>
+      <label class="col-6" style="font-weight: normal !important;">Vicepresidente Comercial</label>
+      <label for="name" class="col-4 offset-2">Cuenta:</label>
+      <label class="col-6" style="font-weight: normal !important;">Corporación El Rosado</label>
+      <label for="name" class="col-4 offset-2">Telefono Principal:</label>
+      <label class="col-6" style="font-weight: normal !important;">(593-2) 394-5830</label>
+      <label for="name" class="col-4 offset-2">E-mail:</label>
+      <label class="col-6" style=" color:blue; font-weight: normal !important;">vpcomercial@elrosado.com</label>
+      <label for="name" class="col-4 offset-2">Dirección:</label>
+      <label class="col-6" style="font-weight: normal !important;">Av 9 de Octubre 727 E/Boyacá y García Avilés</label>
+      <label for="name" class="col-4 offset-2">Status Actual:</label>
+      <label class="col-6" style="font-weight: normal !important;">Bueno</label>
     </div>
-    <div class="frm">
-      <form class="form-inline">
-        <label for="name" class="col-lg-4">Cuenta:</label>
-        <div class="col-lg-8">
-          <label class="col-lg-8" style="    font-weight: normal !important;">Corporación El Rosado</label>
-        </div>
-    </div>
-    <div class="frm">
-      <form class="form-inline">
-        <label for="name" class="col-lg-4">Telefono Principal:</label>
-        <div class="col-lg-8">
-          <label class="col-lg-8" style="    font-weight: normal !important;">3124567456</label>
-        </div>
-    </div>
-    <div class="frm">
-      <form class="form-inline">
-        <label for="name" class="col-lg-4">E-mail:</label>
-        <div class="col-lg-8">
-          <label class="col-lg-8"  style="   color:blue;  text-decoration: underline; font-weight: normal !important;">vpcomercial@elrosado.com</label>
-        </div>
-    </div>
-    <div class="frm">
-      <form class="form-inline">
-        <label for="name" class="col-lg-4">Dirección:</label>
-        <div class="col-lg-8">
-          <label class="col-lg-8" style="    font-weight: normal !important;">Av 9 de Octubre 727 E/Boyacá y García Avilés</label>
-        </div>
-    </div>
-    <div class="frm">
-      <form class="form-inline">
-        <label for="name" class="col-lg-4">Relación:</label>
-        <div class="col-lg-8">
-          <label class="col-lg-8" style="    font-weight: normal !important;">Buena</label>
-        </div>
-    </div>
-
-    <img src="img/oportunidades.png" alt="Smiley face" height="350" width="450">
-        <br>
+    <br>
+    <br>
     <div id="Divider">
     </div>
-    <h3>Resumen de productos</h3>
-    <h4>Tarjeta de credito</h4>
+    <h2>Resumen de productos</h2>
+    <br>
+    <h3>Tarjeta de credito</h3>
+    <br>
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -122,7 +109,9 @@ and open the template in the editor.
         </tbody>
       </table>
     </div>
-    <h4>Creditos</h4>
+    <br>
+    <h3>Creditos</h3>
+    <br>
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -149,9 +138,86 @@ and open the template in the editor.
     </div>
   </div>
   <div id="Paris" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
-  </div>,
+    <div class="row">
+      <div class="col">
+        <h2>Rentabilidad del cliente</h2>
+        <div class="row">
+          <div class="col-3">
+            <br>
+            <br>
+            <br>
+            <img src="img/woman.png" class="pic" alt="">
+          </div>
+          <div class="col-9">
+            <br>
+            <br>
+            <div class="row">
+              <label for="name" class="col-6">Rentabilidad del Cliente:</label>
+              <label class="col-6" style="font-weight: normal !important; color:green">$1.500 USD</label>
+              <label for="name" class="col-6">Score:</label>
+              <label class="col-6" style="font-weight: normal !important;">8,50</label>
+              <label for="name" class="col-6">Calificación:</label>
+              <label class="col-6" style="font-weight: normal !important;">Cliente Rentable</label>
+              <label for="name" class="col-6">Tipo de Cliente:</label>
+              <label class="col-6" style="font-weight: normal !important;">Preferencial</label>
+              <label for="name" class="col-6">Puntos de Loyalty:</label>
+              <label class="col-6" style="font-weight: normal !important;">7.500</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div id="chartdiv"></div>
+      </div>
+    </div>
+    <br>
+    <div id="Divider"></div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <h2>Productos Preaprobados</h2>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Tipo</th>
+                <th>Estado</th>
+                <th>Cupo</th>
+                <th>Tasa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="success active">
+                <td> <img src="http://investadvocate.com.ng/wp-content/uploads/2017/12/MasterCard.jpeg" alt="" border=3 height=40 width=<40></40>
+                  </img>
+                </td>
+                <td>Tarjeta de Credito</td>
+                <td>Vigente</td>
+                <td>$3.500 USD</td>
+                <td>24.00% EA</td>
+              </tr>
+              <tr class="warning">
+                <td> <img src="img/credito.png" alt="" border=3 height=40 width=<40></40>
+                  </img>
+                </td>
+                <td>Crédito Línea Abierta</td>
+                <td>En espera</td>
+                <td>$33.500 USD</td>
+                <td>28.30% EA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col">
+        <div id="morachart" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+      </div>
+    </div>
+    <br>
+
+
+  </div>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts/index.js"></script>
 
